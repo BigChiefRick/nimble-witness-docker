@@ -1,8 +1,8 @@
 FROM centos:7.7.1908
-COPY nimble-witness-opt-rel-ivy-689105-84453d22886f.x86_64.rpm ./
+COPY nimble-witness-opt-rel-juno-737918-1854318f08bc.x86_64.rpm ./
 ARG NimblePass=pleasechangeme
 RUN yum update -y &&\
-	yum install -y nimble-witness-opt-rel-ivy-689105-84453d22886f.x86_64.rpm &&\
+	yum install -y nimble-witness-opt-rel-juno-737918-1854318f08bc.x86_64.rpm \
 	net-tools &&\
 	useradd nimble &&\
 	echo $NimblePass | passwd nimble --stdin
