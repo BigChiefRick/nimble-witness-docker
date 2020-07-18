@@ -9,7 +9,8 @@ Witness binary is updated every once and then so please make sure you are using 
 ## Build
 1. download needed binary via InfoSight.hpe.com
 2. place it in the same directory as the Dockerfile
-3. run `docker build -t nimble/witnessd .`
+3. change password in Dockerfile
+4. run `docker build -t nimble/witnessd .`
 
 ## Run
 - make sure you have docker-compose setup

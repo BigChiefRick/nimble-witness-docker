@@ -5,7 +5,7 @@ services:
     restart: always
     ports:
       - 5395:5395
-	  # Specify another host port if needed or to get multiple instances running on the same host
+# Specify another host port if needed or to get multiple instances running on the same host
     volumes:
       - ./log:/var/log/NimbleStorage/
       - ./config:/opt/NimbleStorage/witness/var/private/config
