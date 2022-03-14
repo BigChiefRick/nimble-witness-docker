@@ -1,8 +1,8 @@
-FROM centos:7.7.1908
-COPY nimble-witness-opt-rel-juno-737918-1854318f08bc.x86_64.rpm ./
+FROM centos:centos7.9.2009
+COPY hpe-alletra-witness-opt-rel-newport-956210-2088d8e85fc2.x86_64.rpm ./
 ARG NimblePass=pleasechangeme
 RUN yum update -y &&\
-	yum install -y nimble-witness-opt-rel-juno-737918-1854318f08bc.x86_64.rpm \
+	yum install -y hpe-alletra-witness-opt-rel-newport-956210-2088d8e85fc2.x86_64.rpm \
 	net-tools &&\
 	useradd nimble &&\
 	echo $NimblePass | passwd nimble --stdin
